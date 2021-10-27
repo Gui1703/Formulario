@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Desafio Formulário</title>
+</head>
+
+<body>
+    <div>
+        <legend>Cadastro</legend>
+        <form action="" method="post" enctype="multipart/form-data">
+            <label id="form">Nome<br>
+                <input name="name" type="text" required>
+            </label>
+
+            <label id="form">Email<br>
+                <input name="email" type="email" required>
+            </label>
+
+            <label id="form">Idade<br>
+                <input name="age" type="number" min="12" step="1" required>
+            </label>
+
+            <label id="form">Data de Nascimento<br>
+                <input name="date" type="date" required>
+            </label>
+
+            <label id="form">Onde você possui conta:<br>
+                <label><input class="social-networks" name="instagram" type="checkbox" required>Instagram</label>
+                <label><input class="social-networks" name="facebook" type="checkbox" required>Facebook</label>
+                <label><input class="social-networks" name="youtube" type="checkbox" required>Youtube</label>
+            </label>
+
+            <label id="form">Sexo<br>
+                <label><input class="sexo" type="radio" name="sexo" value="masculino" required>Masculino</label>
+                <label><input class="sexo" type="radio" name="sexo" value="feminino" required>Feminino</label>
+            </label>
+
+            <label id="form">Cor dos olhos
+                <input class="eyes" name="eyes" type="color" value="#008000" required>
+            </label>
+
+            <label id="form">Biografia<br>
+                <textarea name="bio" cols="30" rows="3" required></textarea>
+            </label>
+
+            <label id="form">Foto de perfil<br>
+                <input name="photograph" type="file" accept="image/*" required>
+            </label>
+
+            <label id="form">Telefone<br>
+                <input name="telephone" type="tel" required>
+            </label>
+
+            <label id="form">Link do Perfil do Facebook<br>
+                <input name="link" type="url" required>
+            </label>
+
+            <label id="form">Senha<br>
+                <input name="password" type="password" min="6" max="8" required>
+            </label>
+
+            <button name="reset" type="reset">Limpar</button>
+            <button name="submit" type="submit">Enviar Dados</button>
+        </form>
+    </div>
+</body>
+
+</html>
